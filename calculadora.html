@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Calculadora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title> Pc Electronics </title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">PC Electronics</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Administrador
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Inventario
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="formularioingresar.html">Ingresar</a></li>
+              <li><a class="dropdown-item" href="formularioactualizar.html">Actualizar</a></li>
+              <li><a class="dropdown-item" href="formularioconsultar.html">Consultar</a></li>
+              <li><a class="dropdown-item" href="formularioeliminar.html">Eliminar</a></li>
+            </ul>
+          </li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Utilidades
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="calculadora.html">Calculadora</a></li>
+            <li><a class="dropdown-item" href="conversor.html">Conversor</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</head>
+<body>
+
+<div class="container">
+	</div>
+  <div class="container" id="calculator-page">
+    <div class="row">
+        <div class="col-md-6"><small></small>
+            <h2 style="font-family: Times New Roman; text-align: center;">Calculadora de venta</h2>
+            <p style="font-family: Times New Roman;"> ¡Bienvenido! <br>
+            El presente aplicativo te permite calcular el valor total de un producto teniendo en cuenta el valor de impuesto (IVA) y utilidad esperada.</p>
+            <div id="error-fields"></div>
+            <form action="#">
+                <div class="form-group mb-3">
+                    <label class="form-label">Valor de compra:</label>
+                    <input class="form-control" id="purchase-value" type="number" placeholder="ej 5000">
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">% Utilidad o ganancia:</label>
+                    <input class="form-control" id="utilities" type="number" placeholder="ej 30%">
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">% IVA:</label>
+                    <input class="form-control" id="iva" type="number" placeholder="ej 19%">
+                </div>
+                <button type="button" class="btn btn-dark">Calcular</button>
+                <br>
+                <br>
+                <label for="Resultado">Resultado:</label>
+                <input type="text"class=cold-md-6 id="column-result" style="padding: 5px;"><em class="fa fa-question-circle-o icon-style"></em>
+            </form>
+        </div>
+        <div id="column-result" class="col-md-6">
+            <div class="border rounded" style="padding: 5px;">
+                <p class="icon-style">
+                    <em class="fa fa-question-circle-o icon-style"></em>
+                </p>
+  	</form>
+      
+</div>
+</body>
+</html>

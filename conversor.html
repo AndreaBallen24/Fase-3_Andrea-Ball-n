@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Conversor de unidades</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+<div class="container-fluid">
+  <a class="navbar-brand" href="index.html">PC Electronics</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Administrador
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Inventario
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="formularioingresar.html">Ingresar</a></li>
+            <li><a class="dropdown-item" href="formularioactualizar.html">Actualizar</a></li>
+            <li><a class="dropdown-item" href="formularioconsultar.html">Consultar</a></li>
+            <li><a class="dropdown-item" href="formularioeliminar.html">Eliminar</a></li>
+          </ul>
+        </li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Utilidades
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="calculadora.html">Calculadora</a></li>
+          <li><a class="dropdown-item" href="conversor.html">Conversor</a></li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+</div>
+</nav>
+</div>
+  <div class="container" id="conversor-page">
+      <div class="row">
+          <div class="col-md-6">
+              <h2 style="text-align: center;">Conversor de Unidades</h2>
+              <p style="font-family: Times New Roman;"> ¡Bienvenido! <br>
+              El presente aplicativo te permite realizar conversiones de unidades de almacenamiento.</p>
+              <div id="error-fields"></div>
+              <form action="#">
+                  <div class="form-group mb-3">
+                      <label class="form-label">Cantidad de almacenamiento:</label>
+                      <input class="form-control" id="stored" type="number" placeholder="ej 1KB">
+                  </div>
+                  <div class="d-flex flex-grow-0 justify-content-between align-items-lg-center">
+                      <select class="form-select" id="initial-state">
+                          <optgroup label="Unidades de almacenamiento">
+                              <option value="NN" selected disabled>Seleccione una opción</option>
+                              <option value="B">Byte</option>
+                              <option value="KB">KiloByte</option>
+                              <option value="MB">MegaByte</option>
+                              <option value="GB">GigaByte</option>
+                              <option value="TB">TeraByte</option>
+                          </optgroup>
+                      </select>
+                      <em class="fa fa-long-arrow-right" style="font-size: 31px;color: var(--bs-gray);margin: 0 10px;"></em>
+                      <select class="form-select" id="final-state">
+                          <optgroup label="Unidades de almacenamiento">
+                              <option value="NN" selected disabled>Seleccione una opción</option>
+                              <option value="B">Byte</option>
+                              <option value="KB">KiloByte</option>
+                              <option value="MB">MegaByte</option>
+                              <option value="GB">GigaByte</option>
+                              <option value="TB">TeraByte</option>
+                          </optgroup>
+                      </select>
+                  </div>
+                  <br>
+                  <button type="button" class="btn btn-dark">Calcular</button>
+                  <br>
+                  <br>
+                  <label for="Resultado">Resultado:</label>
+                <input type="text"class=cold-md-6 id="column-result" style="padding: 5px;"><em class="fa fa-question-circle-o icon-style"></em>
+              </form>
+          </div>
+          <div id="column-result" class="col-md-6">
+                      <em class="fa fa-question-circle-o" style="font-size: 150px;text-align: center;"></em>
+              </div>
+          </div>
+      </div>
+  </div>
+      
+</div>
+
+</body>
+</html>
